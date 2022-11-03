@@ -1,13 +1,25 @@
-﻿Console.WriteLine ("Enter two numbers ");
+﻿Console.WriteLine ("Enter three numbers ");
 int numA = Convert.ToInt32(Console.ReadLine());
 int numB = Convert.ToInt32(Console.ReadLine());
+int numC = Convert.ToInt32(Console.ReadLine());
 
-if (numA > numB){
-    Console.WriteLine ($"{numA} greater then {numB}");
+int max = numA;
+
+if (numB > max){
+    max = numB;
 }
-else if (numA == numB){
-    Console.WriteLine ("Enter two different numbers");
+if (numC > max){
+    max = numC;
 }
-else {
-    Console.WriteLine ($"{numB} greater then {numA}");
+else if (numA==numB){
+    Console.WriteLine ("Enter three different numbers");
 }
+
+else if (numB==numC){
+    Console.WriteLine ("Enter three different numbers");
+}
+else if (numA==numC){
+    Console.WriteLine ("Enter three different numbers");
+}
+
+Console.WriteLine ($"{max} is the greatest number");

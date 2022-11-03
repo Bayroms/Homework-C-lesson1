@@ -1,25 +1,9 @@
-﻿Console.WriteLine ("Enter three numbers ");
-int numA = Convert.ToInt32(Console.ReadLine());
-int numB = Convert.ToInt32(Console.ReadLine());
-int numC = Convert.ToInt32(Console.ReadLine());
+﻿Console.WriteLine ("Enter number ");
+int num = Convert.ToInt32(Console.ReadLine());
 
-int max = numA;
-
-if (numB > max){
-    max = numB;
+if (num%2 == 0){
+    Console.WriteLine($"{num} is even number");
 }
-if (numC > max){
-    max = numC;
+else{
+    Console.WriteLine($"{num} is not even number");
 }
-else if (numA==numB){
-    Console.WriteLine ("Enter three different numbers");
-}
-
-else if (numB==numC){
-    Console.WriteLine ("Enter three different numbers");
-}
-else if (numA==numC){
-    Console.WriteLine ("Enter three different numbers");
-}
-
-Console.WriteLine ($"{max} is the greatest number");
